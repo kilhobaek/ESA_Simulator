@@ -1,0 +1,27 @@
+# UTF-8
+VSVersionInfo(
+ffi=FixedFileInfo(
+filevers=(1, 0, 0, 0),
+prodvers=(1, 0, 0, 0),
+mask=0x3f,
+flags=0x0,
+OS=0x40004,
+fileType=0x1,
+subtype=0x0,
+date=(0, 0)
+),
+kids=[
+StringFileInfo(
+[
+StringTable(
+u'040904B0',
+[StringStruct(u'CompanyName', u'Kilho Baek'),
+StringStruct(u'FileDescription', u'Electrostatic Analyzer (ESA) Simulator for space mission planning and instrument design'),
+StringStruct(u'FileVersion', u'1.0.0'),
+StringStruct(u'LegalCopyright', u'Copyright (c) 2026 Kilho Baek. All rights reserved.'),
+StringStruct(u'OriginalFilename', u'esa_simulator.exe'),
+StringStruct(u'ProductName', u'ESA Simulator')])
+]),
+VarFileInfo([VarStruct(u'Translation', [1033, 1200])])
+]
+)

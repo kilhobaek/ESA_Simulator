@@ -1,0 +1,8 @@
+# Windows
+rmdir /s /q build dist
+del esa_simulator.spec
+pyinstaller --onefile --noconsole --windowed --version-file=version.txt --hidden-import="numpy._core._exceptions" --hidden-import="PIL._tkinter_finder" esa_simulator.py
+
+# Linux
+rm -rf build dist esa_simulator.spec
+pyinstaller --onefile --noconsole --windowed --version-file=version.txt --hidden-import="numpy._core._exceptions" --hidden-import="PIL._tkinter_finder" esa_simulator.py
