@@ -39,7 +39,7 @@ The simulator utilizes a random distribution of incident ions to perform the Mon
 
 * **Incident Angle**: Randomly distributed within a spread of $\pm 5^\circ$ centered around 0 degrees.
 
-* **Ion Energy**: Randomly distributed within a $\pm$20\% bandwidth around the theoretical center energy. This theoretical energy is analytically derived from the input Deflector Voltage ($|V_\mathrm{in}|$).
+* **Ion Energy**: Randomly distributed within a $\pm 20\%$ bandwidth around the theoretical center energy. This theoretical energy is analytically derived from the input Deflector Voltage ($|V_\mathrm{in}|$).
 
 ## Important Usage Notes
 
