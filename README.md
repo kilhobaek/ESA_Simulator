@@ -1,8 +1,7 @@
 # ElectroStatic Analyzer (ESA) Simulator
 
-*(Developed as a personal side project)*
-
-**Current Version**: `v1.0.0-alpha`
+> Developed as a personal side project.  
+> **Current Version**: `v1.1.0-alpha`
 
 This program is a real-time Monte Carlo ray-tracing ESA simulator designed for space mission planning and instrument design.
 
@@ -10,7 +9,7 @@ It analytically calculates the electric field inside a Top-Hat structure and vis
 
 ## Key Features
 
-![Simulator Window](./thumbnail.jpg)
+![Simulator Window](./thumbnail_v110alpha.jpg)
 
 The simulator's graphical interface is divided into three main panels:
 
@@ -47,32 +46,32 @@ The simulator utilizes a random distribution of incident ions to perform the Mon
 * **Manual Execution Required**: To prevent accidental and heavy computational loads, the simulation **does NOT run automatically** when you modify text parameters or change radio buttons. You must explicitly click the **[Run Simulation]** button or press the **[Enter]** key to execute the calculation.
 
 * **Ion Count Limits**: The `# of Ions` must be **at least 1,000** to run the simulation and perform a valid statistical fit.
-    * **Warning**: Simulating **10,000 or more ions** can take a considerable amount of computational time.
+  * **Warning**: Simulating **10,000 or more ions** can take a considerable amount of computational time.
 
 * **Executable Startup Time**: If you are running the compiled ``.exe`` file from the `dist/` folder, please be patient; it may take approximately 5 seconds for the window to initially appear.
 
 ## Windows Executable (.exe) (No Python Required)
 
 1. Download the ``esa_simulator.exe`` file from the **Releases** page
-2. Double-click to run.
-
-*(Note: Initial startup may take 5-10 seconds to extract and load essential math libraries.)*
+2. Double-click to run.  
+(Note: Initial startup may take 5-10 seconds to extract and load essential math libraries.)
 
 ## Installation & Setup
 
-The GUI is built using Python's built-in `tkinter` library, so no extra GUI framework installation is required.
+* **No Extra GUI Installation**: Built using Python's native `tkinter` library. No additional GUI frameworks are required.
+* **High-Speed Computation**: Powered by the `numba` package for fast numerical calculations.
 
 ### Prerequisites
 
 * Python 3.8+
-* Required packages: `numpy`, `scipy`, `matplotlib`
+* Required packages: `numpy`, `scipy`, `matplotlib`, `numba`
 * Optional package: `pyinstaller` (only for building the executable)
 
 ### Execute Python Script
 
 ```bash
 # 1. Install Dependencies  
-pip install numpy scipy matplotlib
+pip install numpy scipy matplotlib numba
 
 # 2. Run the Source
 python esa_simulator.py
@@ -87,12 +86,12 @@ To modify the source code and build a standalone `.exe` for Windows, you will ne
 pip install pyinstaller
 
 # Build the executable
-pyinstaller --onefile --windowed --version-file=version.txt esa_simulator.py
+pyinstaller --onefile --noconsole --windowed --version-file=version.txt esa_simulator.py
 ```
 
 ## Developer
 
-Kilho Baek (kilho.baek@gmail.com)
+Kilho Baek ([kilho.baek [at] gmail.com](mailto:kilho.baek@gmail.com))
 
 ## License
 

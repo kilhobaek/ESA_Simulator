@@ -1,2 +1,4 @@
 dist/
 build/
+.vscode/
+esa_simulator.spec
