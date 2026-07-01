@@ -29,26 +29,26 @@ The simulator's graphical interface is divided into three main panels:
 
 * $\alpha$ (deg): The incident angle of the ion. (Note: This parameter is exclusively used to display the trajectory of the reference ion in the middle geometry plot. It does not dictate the center angle of the random beam distribution).
 
-## Monte Carlo Beam Distribution
+## Incident Ions Distribution
 
 The simulator utilizes a random distribution of incident ions to perform the Monte Carlo ray-tracing. The parameters for the randomly generated ions are constrained as follows:
 
 * **Distribution Types**: You can select between **Uniform** (evenly spread across the allowed ranges) and **Gaussian** (normally distributed around the center values).
 
-* **Incident Position**: Randomly distributed within the physical limits of the aperture gap (between the inner radius $R_\matrm{in}$ and the outer radius $R_\mathrm{out}$).
+* **Incident Position**: Randomly distributed within the physical limits of the aperture gap (between the inner radius $R_\mathrm{in}$ and the outer radius $R_\mathrm{out}$).
 
 * **Incident Angle**: Randomly distributed within a spread of $\pm 5^\circ$ centered around 0 degrees.
 
-* **Ion Energy**: Randomly distributed within a $\pm 20\%$ bandwidth around the theoretical center energy. This theoretical energy is analytically derived from the input Deflector Voltage ($|V_\mathrm{in}|$).
+* **Ion Energy**: Randomly distributed within a $\pm$20\% bandwidth around the theoretical center energy. This theoretical energy is analytically derived from the input Deflector Voltage ($|V_\mathrm{in}|$).
 
 ## Important Usage Notes
 
 * **Manual Execution Required**: To prevent accidental and heavy computational loads, the simulation **does NOT run automatically** when you modify text parameters or change radio buttons. You must explicitly click the **[Run Simulation]** button or press the **[Enter]** key to execute the calculation.
 
 * **Ion Count Limits**: The `# of Ions` must be **at least 1,000** to run the simulation and perform a valid statistical fit.
-  * **Warning**: Simulating **10,000 or more ions** can take a considerable amount of computational time.
+  * **Warning**: Simulating **50,000 or more ions** can take a considerable amount of computational time.
 
-* **Executable Startup Time**: If you are running the compiled ``.exe`` file from the `dist/` folder, please be patient; it may take approximately 5 seconds for the window to initially appear.
+* **Executable Startup Time**: If you are running the compiled ``.exe`` file from *Github Release*, please be patient; it may take ~10 seconds for the window to initially appear.
 
 ## Windows Executable (.exe) (No Python Required)
 
